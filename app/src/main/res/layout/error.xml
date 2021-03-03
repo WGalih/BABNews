@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:visibility="gone"
+    android:id="@+id/errorLayout">
+
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_wifi_off_24"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_error1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_error"
+        android:text="No Connection"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorGray"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_error2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_error1"
+        android:text="Please check your internet connection \n
+                        and try again."
+        android:textSize="16sp"
+        android:textColor="@color/colorDarkGray"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
